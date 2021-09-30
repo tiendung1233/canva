@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    --color-nav:#4c5d6e;
+}
+.col__nav-selection {
+    padding-left: 4px;
+    padding-right: 4px;
+}   
+
+.gird{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+@keyframes FadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css    ">
+        <link rel="stylesheet" href="./assets/css/base.css">
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="./assets/css/grid.css">
+        <link rel = "preconnect" href = "https://fonts.googleapis.com">
+        <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+        <link rel = "preconnect" href = "https://fonts.googleapis.com">
+        <title>Canvas</title>
+    </head>
+<body>
+    <div class="main">
+        <div class="grid wide ">
+        <!-- header -->
+            <div class="header">
+                <div class="nav">
+                    <div class="nav__icon-logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 70 70"><circle cx="35" cy="35" r="35" fill="#00C4CC"></circle><path fill="#FFF" d="M58.4 36c-.4 0-1.1-.1-1.1-.5s.9-.2.8-1.1c-.1-.6-.7-.8-1.3-.8-2 0-3.3 2.6-3 4.7.1.8.5 1.7 1.3 1.7.6 0 1.5-.9 1.9-2.2.2-.8 1-1.5 1.7-1.5.3 0 .5.1.6.5 0 .2 0 .6-.4 1.9-.5.9-.5 1.4-.4 1.8.1.8.5 1.4.9 1.7l.2.3c0 .2-.1.4-.4.4l-.3-.1c-1.5-.6-2.1-1.6-2.3-2.6-.6.7-1.3 1.1-2.1 1.1-1.3 0-2.6-1.2-2.8-2.7 0-.6 0-1.3.2-1.9-.6.4-1.2.6-1.8.6h-.5a13.3 13.3 0 0 1-3.7 3.8l-1.1.3c-.2 0-.5-.1-.6-.3a5.3 5.3 0 0 1-.6-2 7 7 0 0 1-4.2 2.4c-1 0-1.6-.6-1.7-1.6v-1.1c.3-2.2 1.1-3.5 1.1-3.9l-.2-.2c-.7 0-3 2.4-3.4 4l-.3 1.3c-.2.9-1.1 1.5-1.7 1.5-.3 0-.5-.1-.6-.5v-.4l.1-.7a7.4 7.4 0 0 1-3.1 1.5c-.9 0-1.4-.5-1.5-1.2-.6.8-1.3 1.2-2.2 1.2a2.9 2.9 0 0 1-2.5-1.7c-.7.8-1.5 1.6-2.5 2.2a9 9 0 0 1-4.9 1.6 6 6 0 0 1-4-1.7 6.7 6.7 0 0 1-2-4.4 15.7 15.7 0 0 1 7-14 7 7 0 0 1 3.3-1 4 4 0 0 1 4.1 3.5c.2 1.7-.5 3.2-2.4 4.1-1 .5-1.4.5-1.6.2 0-.2 0-.4.2-.6 1.8-1.5 1.8-2.7 1.6-4.4 0-1.1-.9-1.8-1.7-1.8-3.5 0-8.5 7.8-7.8 13.5.3 2.2 1.6 4.8 4.4 4.8 1 0 2-.3 2.8-.7a10.5 10.5 0 0 0 3.2-2.3c-.2-2.6 2-6 5.4-6 1.5 0 2.7.6 2.8 1.7.2 1.5-1 1.7-1.5 1.7-.4 0-1-.1-1-.5-.2-.4.8-.2.7-1.1 0-.6-.7-.8-1.3-.8-2 0-3.3 2.9-3 4.7.1.8.5 1.6 1.3 1.6.6 0 1.5-.9 1.8-2.2.2-.9 1-1.5 1.7-1.5.3 0 .5.1.6.5v.4c0 .4-.4 1.6-.3 1.9 0 .2.1.5.5.5.3 0 1.3-.5 2.3-1.3l.7-4c.1-.7.4-1.4 1.8-1.4.3 0 .5.1.6.5v.4l-.4 1.8c1.3-1.7 3.2-2.9 4.4-2.9.5 0 1 .3 1 .8 0 .3 0 .8-.3 1.3-.4 1.1-.9 2.8-1.2 4.3 0 .4.1.8.6.8s2-.6 3.2-2.2v-.6c0-1.2.1-2.2.3-2.9.2-.8 1.2-1.5 1.8-1.5.3 0 .6.2.6.5v.4c-.5 1.3-.8 2.5-.8 3.7 0 .7.1 1.7.3 2.3l.2.2c.2 0 1.6-1.3 2.6-3a3.2 3.2 0 0 1-1.4-2.8c0-2.1 1.3-3.2 2.5-3.2 1 0 1.8.7 1.8 2.1a6 6 0 0 1-.8 2.8h.3c.8 0 1.3-.3 1.7-.7a.8.8 0 0 1 .4-.3 5.3 5.3 0 0 1 4.1-2.2c1.4 0 2.7.6 2.8 1.7.2 1.5-1.1 1.8-1.5 1.8z"></path><path fill="#00C4CC" d="M48.8 32c-.3 0-.5.5-.5 1 0 .8.4 1.7.9 2.2a5 5 0 0 0 .3-1.7c0-1-.4-1.5-.7-1.5"></path></svg>
+                    </div>
+                    
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href=""> Trang chủ</a> </li>
+                        <li class="nav-item nav-item_discover">
+                            <a href="" class="nav-item_discover-link" > Khám phá
+                                <i class="nav-item_icon ti-angle-down"></i>
+                            </a>  
+                            <div class="nav-selection "> 
+                                <div class="nav-selection__design col__nav-selection c-4">
+                                    <div class="selection__img">
+                                        <img src="./assets/img/design-types@2x.webp" class="selection__img-item" alt="">
+                                    </div>
+                                    <ul class="selection__list">
+                                        <li class="selection__list-item">
+                                            <a href=""class="selection__list-item-link">Loại thiết kê
+                                                <i class="selection__list-icon ti-angle-right"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href=""class="selection__list-item-link">Logo</a>
+                                            </li>
+                                        <li>
+                                            <a href=""class="selection__list-item-link">Áp phích</a>
+                                            </li>
+                                        <li>
+                                            <a href=""class="selection__list-item-link">Danh thiếp</a>
+                                            </li>
+                                        <li>
+                                            <a href=""class="selection__list-item-link">Tờ rơi</a>
+                                            </li>
+                                        <li>
+                                            <a href=""class="selection__list-item-link">CV</a>
+                                            </li>
+                                        <li>
+                                            <a href=""class="selection__list-item-link">Ảnh infographic</a>
+                                            </li>
+                                        <li>
+                                            <a href=""class="selection__list-item-link">Xem tất cả
+                                                <i class="selection__list-icon ti-angle-right"></i>
+                                            </a>
+                                            </li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="nav-selection__feature col__nav-selection c-4">
+                                    <div class="selection__img">
+                                        <img src="./assets/img/features@2x-1.webp " class="selection__img-item" alt="">
+                                    </div>
+                                    <ul class="selection__list">
+                                        <li class="selection__list-item">
+                                            <a href=""class="selection__list-item-link">Tính năng
+                                                <i class="selection__list-icon ti-angle-right"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href=""class="selection__list-item-link">Biểu đồ</a>
+                                            </li>
+                                        <li>
+                                            <a href=""class="selection__list-item-link">Chỉnh sửa</a>
+                                            </li>
+                                        <li>
+                                            <a href=""class="selection__list-item-link">In</a>
+                                            </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-selection__download col__nav-selection c-4">
+                                    <div class="selection__img">
+                                            <img src="./assets/img/download-canva-app.webp" class="selection__img-item" alt="">
+                                    </div>
+                                    <ul class="selection__list">
+                                        <li class="selection__list-item">
+                                            <a href=""class="selection__list-item-link">Tải xuống</a>
+                                            </li>
+                                        <li>
+                                            <a href=""class="selection__list-item-link">Canva cho Mac</a>
+                                            </li>
+                                        <li>
+                                            <a href=""class="selection__list-item-link">Canva cho Windown</a>
+                                            </li>
+                                        <li>
+                                            <a href=""class="selection__list-item-link">Canva cho Android</a>
+                                            </li>
+                                        <li>
+                                            <a href=""class="selection__list-item-link"> Canva cho IOS</a>
+                                           </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>   
+                        
+                        <li class="nav-item"><a href=""> Giá</a> </li>
+                    </ul>
+                </div>      
+                <div class="header-search">
+                    <div class="header-search__icon ti-search"></div>
+                    <input type="text" class="header-search__input" placeholder="Hãy thử tìm một bản thuyết trình, logo, áo thun, bất cứ thứ gì!">
+                </div>
+                <div class="header-help">
+                    <a href="" class="header-help__icon ti-help-alt"></a>
+                </div>
+                <div class="header-form">
+                    <div class="header-form__btn">
+                        <button class="header-form__log-in js-header-login">Đăng nhập</button>
+                    </div>
+                    <div class="header-form__btn">
+                        <button class="header-form__register js-header-register">Đăng kí</button>
+                    </div>
+                </div>
+                
+                <div class="header-bars">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        <!-- conten -->
+            <div class="conten">
+                <div class="conten__heading">
+                    <div class="conten__heading-sele">
+                        <p class="conten__heading-sele-text">   
+                            Bạn muốn thiết kế gì?
+                        </p>
+                        <div class="conten__heading-list-icon-box">
+                            <ul class="conten__heading-list-icon">
+                                <li class="conten__heading-item"></a><svg class="conten__heading-item-icon ch-icon-1 icon-exception" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path d="M11.26 7.49c0-.36-.35-.45-.35-.45-1.55-.49-2.49-1.43-2.98-2.99 0 0-.06-.34-.45-.34-.38 0-.44.34-.44.34-.49 1.56-1.42 2.5-2.98 2.99 0 0-.35.09-.35.45s.35.45.35.45c1.56.49 2.49 1.43 2.98 2.99 0 0 .06.34.45.34.38-.01.45-.34.45-.34.49-1.56 1.42-2.5 2.98-2.99 0 .01.34-.08.34-.45 0 .01 0 .01 0 0zm17.06 8.46c0-.53-.44-.88-.94-1 0 0-3.96-1.34-5.43-2.25-.98-.48-1.91-1.45-2.5-2.41v.01c-.89-1.16-2.39-5.73-2.39-5.73-.18-.59-.52-.93-1.05-.94v.04L16 3.63c-.53 0-.88.44-1 .94 0 0-1.34 3.96-2.25 5.43-.48.98-1.45 1.91-2.41 2.5h.01c-1.16.89-5.73 2.39-5.73 2.39-.59.18-.93.52-.94 1.05l.06.01h-.06c0 .53.44.88.94 1 0 0 3.96 1.34 5.43 2.25.98.48 1.91 1.45 2.5 2.41v-.01c.89 1.16 2.39 5.73 2.39 5.73.18.59.52.93 1.05.94l.01-.07.01.07c.53 0 .88-.44 1-.94 0 0 1.34-3.96 2.25-5.43.48-.98 1.45-1.91 2.41-2.5h-.01c1.16-.89 5.73-2.39 5.73-2.39.59-.18.93-.52.94-1.05l-.08-.01h.07zm-.26 8.99c-.47-.24-.92-.58-1.31-.97s-.73-.85-.97-1.31c0 0-.11-.24-.39-.24s-.39.24-.39.24c-.24.47-.58.92-.97 1.31s-.85.73-1.31.97c0 0-.24.11-.24.39s.24.39.24.39c.47.24.92.58 1.31.97s.73.85.97 1.31c0 0 .11.24.39.24s.39-.24.39-.24c.24-.47.58-.92.97-1.31s.85-.73 1.31-.97c0 0 .24-.11.24-.39s-.24-.39-.24-.39z" fill="currentColor"></path></svg></i>
+                                        <p class="conten__heading-text" style="width: 63px;">Dành cho bạn</p>
+                                </li>
+                                <li class="conten__heading-item"></a><svg class="conten__heading-item-icon ch-icon-2" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path d="M16 4.96c2.32 0 4.67.04 6.99.11.59.02 1.15.16 1.69.35-.72-1.1-1.95-1.87-3.31-1.91-1.79-.05-3.58-.07-5.37-.07s-3.58.02-5.37.07c-1.36.04-2.59.81-3.31 1.91.54-.2 1.1-.33 1.7-.35 2.31-.07 4.66-.11 6.98-.11zM15.98 8c2.83 0 5.7.05 8.53.14.59.02 1.15.16 1.68.35-.24-.35-.52-.68-.85-.94-.67-.55-1.51-.91-2.4-.94-2.32-.07-4.63-.11-6.94-.11s-4.62.04-6.94.11c-.89.03-1.73.39-2.41.94-.33.26-.6.59-.84.93.52-.19 1.07-.32 1.64-.34 2.84-.1 5.71-.14 8.53-.14zm12.48 5.68c-.03-1.19-.64-2.27-1.53-3.01-.69-.58-1.55-.95-2.47-.99-2.83-.09-5.65-.14-8.48-.14s-5.65.05-8.48.14c-.91.03-1.75.4-2.43.96-.91.74-1.53 1.84-1.56 3.04-.1 3.59-.1 7.19 0 10.78.06 2.11 1.88 3.93 4 4 2.83.09 5.65.14 8.48.14s5.65-.05 8.48-.14c2.11-.08 3.94-1.89 4-4 .08-3.59.08-7.19-.01-10.78zM15.98 24.07c-2.76 0-5-2.24-5-5s2.24-5.01 5-5.01v5.01h5.01c0 2.76-2.24 5-5.01 5zm1.14-6.14v-5.01c2.76 0 5.01 2.24 5.01 5.01h-5.01z" fill="currentColor"></path></svg>
+                                    <p class="conten__heading-text">Thuyết trình</p>
+                                </li>
+                                <li class="conten__heading-item"></a><svg class="conten__heading-item-icon ch-icon-3" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path d="M28.5 9.1c-.1-2.1-1.9-3.9-4-4-5.6-.2-11.3-.2-17 0-2.1.1-3.9 1.9-4 4-.1 3.6-.1 7.2 0 10.8.1 2.1 1.9 3.9 4 4 1.4 0 2.8 0 4.2.1l2.5 3.5c1 1.4 2.6 1.4 3.6 0l2.5-3.5c1.4 0 2.8 0 4.2-.1 2.1-.1 3.9-1.9 4-4 .1-3.6.1-7.2 0-10.8zm-6.6 5.5c-.1.4-.2.7-.5 1-.3.5-1.5 2.2-4.8 4.6h-1.4c-2.5-1.9-3.8-3.3-4.4-4.1-.1-.2-.2-.3-.3-.4v-.1c-.2-.3-.4-.6-.5-1-.1-.3-.1-.6-.1-.9 0-.2 0-.4.1-.5.1-.7.4-1.3.9-1.8.6-.6 1.4-.9 2.2-.9 1.3 0 2.4.8 2.9 1.8.5-1.1 1.6-1.8 2.9-1.8 1.8 0 3.2 1.4 3.2 3.2-.1.3-.1.6-.2.9z" fill="currentColor"></path></svg>
+                                    <p class="conten__heading-text">Mạng xã hội</p>
+                                </li>
+                                <li class="conten__heading-item"></a><svg class="conten__heading-item-icon ch-icon-4" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path d="M27.48 10.09l-3.44 2.46c-.02-1.16-.02-2.32-.05-3.48-.07-2.11-1.89-3.93-4-4-4.63-.14-9.24-.14-13.87 0-2.11.07-3.94 1.89-4 4-.14 4.62-.14 9.24 0 13.86.07 2.11 1.89 3.93 4 4 4.63.14 9.24.14 13.87 0 2.11-.07 3.94-1.89 4-4 .03-1.16.03-2.32.05-3.48l3.44 2.46c1.38.98 2.51.4 2.51-1.29v-9.24c0-1.69-1.13-2.27-2.51-1.29zm-10.93 7.44l-5.44 3.12c-1.47.84-2.67.15-2.67-1.55v-6.21c0-1.69 1.2-2.39 2.67-1.55l5.44 3.12c1.47.85 1.47 2.23 0 3.07z" fill="currentColor"></path></svg>
+                                    <p class="conten__heading-text">Video</p>
+                                </li>
+                                <li class="conten__heading-item"></a><svg class="conten__heading-item-icon ch-icon-5" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path d="M28.46 13.69c-.05-2.11-1.87-3.93-3.98-4h-.04V7.08c0-.21-.09-.4-.23-.54l-2.62-2.62a.764.764 0 0 0-.54-.23H9.87C8.6 3.69 7.56 4.73 7.56 6v3.7h-.04c-2.11.08-3.94 1.9-3.98 4-.04 2.05-.04 5.65 0 7.7.05 2.11 1.87 3.93 3.98 4h.04v.61c0 1.27 1.04 2.31 2.31 2.31h12.26c1.27 0 2.31-1.04 2.31-2.31v-.62h.04c2.11-.08 3.94-1.9 3.98-4 .04-2.05.04-5.65 0-7.7zM8.91 17.92c-.51-.02-.96-.47-.98-.98-.02-.62-.02-1.24 0-1.85.02-.51.48-.96.98-.98.62-.02 1.23-.02 1.85 0 .51.02.96.47.98.98.02.62.02 1.24 0 1.85-.02.51-.48.96-.98.98-.61.02-1.23.02-1.85 0zm13.17 7.27c0 .42-.35.77-.77.77H10.69c-.42 0-.77-.35-.77-.77v-2.22h12.16v2.22zm0-13.8H9.92V6.8c0-.42.35-.77.77-.77h8.39v3h3v2.36z" fill="currentColor"></path></svg>
+                                    <p class="conten__heading-text" style="width:57px">Sản phẩm in</p>
+                                </li>
+                                <li class="conten__heading-item"></a><svg class="conten__heading-item-icon ch-icon-6" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path d="M29.43 14.39c-.84-3.95-2.39-7.24-4.06-9a4.08 4.08 0 0 0-6.73 1.43c-.12.33-.21.7-.3 1.08L4.28 15.67c-.28-.33-.73-.5-1.19-.4s-.8.44-.92.85c-.28.88-.27 2.39.09 4.04.35 1.66.95 3.04 1.56 3.73.28.33.73.5 1.19.4s.8-.44.92-.85l.98.08 6.6.56c.15.02.28.15.32.31.04.21-.09.41-.3.46l-3.53.76c.99 1.62 2.92 2.54 4.89 2.12 1.72-.36 2.98-1.64 3.45-3.22l3.6.31c.23.32.47.61.71.86a4.08 4.08 0 0 0 6.73-1.43c.81-2.27.89-5.92.05-9.86zm-8.26-1.12c0-.01-.01-.03-.02-.04-.11-.5-.21-1.01-.32-1.51-.17-.78.27-1.91 1.09-2.22.5-.17 1.01-.28 1.53-.33.87-.04 1.73.81 1.9 1.59.11.5.21 1.01.32 1.51v.05c.31 1.55-.37 3.63-.54 4.79h-.01.01l-1.51.32c-.63-1-2.1-2.62-2.45-4.16zm5.22 8.59c-.63.27-1.3.42-1.99.42-.53-.01-1.04-.52-1.14-.99-.09-.4-.17-.8-.26-1.21-.1-.47.16-1.14.64-1.37.63-.27 1.3-.42 1.99-.42.53.01 1.04.52 1.14.99.09.4.17.8.26 1.21.1.47-.16 1.14-.64 1.37z" fill="currentColor"></path></svg>
+                                    <p class="conten__heading-text">Tiếp thị</p>
+                                </li>
+                                <li class="conten__heading-item"></a><svg class="conten__heading-item-icon ch-icon-7" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path fill="currentColor" d="M17.2 17.4h-2.3c-.4 0-.8.3-.8.8v1.6l.1.4c.5 1 1.3 1.4 1.7 1.5h.2c.3-.1 1.2-.6 1.7-1.5l.1-.4v-1.6c0-.5-.3-.8-.7-.8zm11.4-3.7a4.3 4.3 0 0 0-.2-1 4 4 0 0 0-1.4-2c-.7-.6-1.5-1-2.5-1l-2.3-.1v-2a4.3 4.3 0 0 0-4-4H14a4.3 4.3 0 0 0-4 4v2l-2.4.1c-.9 0-1.8.4-2.4 1-.9.7-1.5 1.8-1.6 3v10.8a4.3 4.3 0 0 0 4 4l8.5.1 8.5-.1a4.3 4.3 0 0 0 4-4V13.7zM13.8 6.6h4.6c.4 0 .8.3.8.8v2.2H13V7.4c0-.4.3-.8.8-.8zm12.8 11.6c0 1.3-1.1 2.3-2.4 2.3h-4.1l-.3.7c-.9 2.1-2.8 2.9-3.5 3.2h-.6c-.7-.3-2.6-1.1-3.5-3.2l-.3-.7H7.8c-1.3 0-2.3-1-2.3-2.3v-.4c0-.2.2-.4.4-.4l.3.1.3.3c.4.3.8.4 1.3.4h4c0-1.7 1.4-3.1 3.1-3.1h2.3c1.7 0 3.1 1.4 3.1 3.1h4c.5 0 .9-.2 1.3-.4l.3-.3.3-.1c.2 0 .4.2.4.4v.4z"></path></svg>
+                                    <p class="conten__heading-text">Văn phòng</p>
+                                </li>
+                                <li class="conten__heading-item"></a><svg class="conten__heading-item-icon ch-icon-8" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.667 18.667a2.667 2.667 0 1 0 0-5.334 2.667 2.667 0 0 0 0 5.334zm9.333 0a2.667 2.667 0 1 0 0-5.334 2.667 2.667 0 0 0 0 5.334zM28 16a2.667 2.667 0 1 1-5.333 0A2.667 2.667 0 0 1 28 16z" fill="currentColor"></path></svg>
+                                    <p class="conten__heading-text">Thêm </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class=" conten__heading-details">
+                        <div class="heading-details__img-link" ><img class="heading-details__img" src="./assets/img/bản thuyết trình.png" alt="">
+                        <div class="heading-details__text">Bản thuyết trình</div>
+                        </div>
+                        <div class="heading-details__img-link" ><img class="heading-details__img" src="./assets/img/video.png" alt="">
+                        <div class="heading-details__text">Video</div>
+                        </div>
+                        <div class="heading-details__img-link" ><img class="heading-details__img" src="./assets/img/bai dang facebook.png" alt="">
+                        <div class="heading-details__text">Bài đăng Facebook</div>
+                        </div>
+                        <div class="heading-details__img-link" ><img class="heading-details__img" src="./assets/img/logo.png" alt="">
+                        <div class="heading-details__text">Logo</div>
+                        </div>
+                        <div class="heading-details__img-link" ><img class="heading-details__img" src="./assets/img/trang bia.png" alt="">
+                        <div class="heading-details__text">Trang bìa Facebook</div>
+                        </div>
+                        <div class="heading-details__img-link" ><img class="heading-details__img" src="./assets/img/apphic.png" alt="">
+                        <div class="heading-details__text">Áp phích</div>
+                        </div>
+                        <div class="heading-details__img-link" ><img class="heading-details__img" src="./assets/img/bản thuyết trình.png" alt="">
+                    </div>
+                </div>
+                <div class="conten__body">
+                    <div class="conten__body-item">
+                        <img class="w3KZWAA" draggable="false" alt="" srcset="https://static.canva.com/marketplace/login/benefits-start-1200x780.png 1200w" src="https://static.canva.com/marketplace/login/benefits-start-1200x780.png">
+                        <div class="conten__body-item-text">
+                            <p class="conten-text__big">Bắt đầu đón nhận nguồn cảm hứng</p>
+                            <p2 class="conten-text__small">Với hàng nghìn mẫu chuyên nghiệp, hình ảnh và nội dung chất lượng cho bạn lựa chọn, bạn sẽ có khởi đầu thật thuận lợi khi hiện thực hóa những ý tưởng và tác phẩm tuyệt nhất.</p2>                   
+                        </div>
+                    </div>
+
+                    <div class="conten__body-item">
+                        <div class="conten__body-item-text">
+                            <p class="conten-text__big">Cộng tác dễ dàng</p>
+                            <p2 class="conten-text__small">Mời mọi người chỉnh sửa cùng bạn hoặc thiết lập cả đội trong Canva Pro để quản lý tài sản thương hiệu, đưa ra ý kiến phản hồi, yêu cầu phê duyệt và điều chỉnh tỷ lệ nội dung trực quan của bạn.</p2>                   
+                        </div>
+
+                        <img class="w3KZWAA" draggable="false" alt="" srcset="https://static.canva.com/marketplace/login/benefits-collab-1200x780.png 1200w" src="https://static.canva.com/marketplace/login/benefits-collab-1200x780.png"></div>
+
+                    <div class="conten__body-item">
+                        <img class="w3KZWAA" draggable="false" alt="" srcset="https://static.canva.com/marketplace/login/benefits-share-1200x780.png 1200w" src="https://static.canva.com/marketplace/login/benefits-share-1200x780.png">
+                        <div class="conten__body-item-text">
+                            <p class="conten-text__big">Tự hào chia sẻ</p>
+                            <p2 class="conten-text__small">Dù bạn cần thuyết trình, tải nội dung xuống, lên lịch, chia sẻ hay in, hãy tận hưởng niềm vui khi thấy tác phẩm của bạn tạo ra tác động trong thế giới thực.</p2>                   
+                        </div>
+                    </div>
+
+                </div>
+                <div class="conten__body-need-tex">
+                    <p class="conten__body-need-texbig">
+                        Luôn có mẫu phù hợp với nhu cầu
+                    </p>
+                    <p class="conten__body-need-texsmall">
+                        Tùy chỉnh mẫu văn phòng hoặc thiết kế một mẫu của riêng bạn, chẳng hạn như thư mời.
+                    </p>
+                </div>
+                <div class="conten__body-need-box">
+                    <button class="conten__body-need-btn">
+                        <div class="conten__body-need-btn-icon">
+                            <span aria-hidden="true" class="IWeiUw NA_Img dkWypw"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M19.5 10V5a.5.5 0 0 0-.5-.5h-4.5V10h5zm0 1.5h-5v8H19a.5.5 0 0 0 .5-.5v-7.5zm-6.5-7H5a.5.5 0 0 0-.5.5v14c0 .28.22.5.5.5h8v-15zM5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2z"></path></svg></span>
+                        </div>
+                        Tất cả các danh mục
+                        <div class="conten__body-need-btn-icon-down">
+                            <span aria-hidden="true" class="_5wN5mg uRWxVA dkWypw"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="currentColor" d="M11.71 6.47l-3.53 3.54c-.1.1-.26.1-.36 0L4.3 6.47a.75.75 0 1 0-1.06 1.06l3.53 3.54c.69.68 1.8.68 2.48 0l3.53-3.54a.75.75 0 0 0-1.06-1.06z"></path></svg></span>
+                        </div>
+                    </button>
+                </div>
+                <div class="conten__body-need">
+                    <div class="conten__body-need-rows">
+                        <div class="conten__body-need-img">
+                            <img class="w3KZWA" draggable="false" alt="Hồng và Tím Lá Màu nước Cọ Gia đình Ngày của Mẹ Thiệp phẳng" srcset="https://marketplace.canva.com/EAEapxyYDso/2/0/1143w/canva-h%E1%BB%93ng-v%C3%A0-t%C3%ADm-l%C3%A1-m%C3%A0u-n%C6%B0%E1%BB%9Bc-c%E1%BB%8D-gia-%C4%91%C3%ACnh-ng%C3%A0y-c%E1%BB%A7a-m%E1%BA%B9-thi%E1%BB%87p-ph%E1%BA%B3ng-JfC4H0ydEHw.jpg 1143w, https://marketplace.canva.com/EAEapxyYDso/2/0/286w/canva-h%E1%BB%93ng-v%C3%A0-t%C3%ADm-l%C3%A1-m%C3%A0u-n%C6%B0%E1%BB%9Bc-c%E1%BB%8D-gia-%C4%91%C3%ACnh-ng%C3%A0y-c%E1%BB%A7a-m%E1%BA%B9-thi%E1%BB%87p-ph%E1%BA%B3ng-jnixbGQPnl0.jpg 286w, https://marketplace.canva.com/EAEapxyYDso/2/0/571w/canva-h%E1%BB%93ng-v%C3%A0-t%C3%ADm-l%C3%A1-m%C3%A0u-n%C6%B0%E1%BB%9Bc-c%E1%BB%8D-gia-%C4%91%C3%ACnh-ng%C3%A0y-c%E1%BB%A7a-m%E1%BA%B9-thi%E1%BB%87p-ph%E1%BA%B3ng-3GgEEyYGt1Y.jpg 571w, https://marketplace.canva.com/EAEapxyYDso/2/0/71w/canva-h%E1%BB%93ng-v%C3%A0-t%C3%ADm-l%C3%A1-m%C3%A0u-n%C6%B0%E1%BB%9Bc-c%E1%BB%8D-gia-%C4%91%C3%ACnh-ng%C3%A0y-c%E1%BB%A7a-m%E1%BA%B9-thi%E1%BB%87p-ph%E1%BA%B3ng-Li_US99EjqI.jpg 71w" sizes="(max-width: 600px) 50vw, (max-width: 900px) 33vw, (max-width: 1200px) 25vw, (max-width: 1500px) 20vw, 17vw" src="https://marketplace.canva.com/EAEapxyYDso/2/0/1143w/canva-h%E1%BB%93ng-v%C3%A0-t%C3%ADm-l%C3%A1-m%C3%A0u-n%C6%B0%E1%BB%9Bc-c%E1%BB%8D-gia-%C4%91%C3%ACnh-ng%C3%A0y-c%E1%BB%A7a-m%E1%BA%B9-thi%E1%BB%87p-ph%E1%BA%B3ng-JfC4H0ydEHw.jpg">
+                        </div>
+                        <div class="conten__body-need-img">
+                            <img class="w3KZWA" draggable="false" alt="Bưu thiếp in tôi nhớ bạn hoạ tiết chữ viết nguệch ngoạc" sizes="(max-width: 600px) 50vw, (max-width: 900px) 33vw, (max-width: 1200px) 25vw, (max-width: 1500px) 20vw, 17vw" srcset="https://marketplace.canva.com/EAD7qTMzIeE/1/0/100w/canva-b%C6%B0u-thi%E1%BA%BFp-%08in-t%C3%B4i-nh%E1%BB%9B-b%E1%BA%A1n-ho%E1%BA%A1-ti%E1%BA%BFt-ch%E1%BB%AF-vi%E1%BA%BFt-ngu%E1%BB%87ch-ngo%E1%BA%A1c-tUdV_6KNzv4.jpg 100w, https://marketplace.canva.com/EAD7qTMzIeE/1/0/1600w/canva-b%C6%B0u-thi%E1%BA%BFp-%08in-t%C3%B4i-nh%E1%BB%9B-b%E1%BA%A1n-ho%E1%BA%A1-ti%E1%BA%BFt-ch%E1%BB%AF-vi%E1%BA%BFt-ngu%E1%BB%87ch-ngo%E1%BA%A1c--GrJ-0ZsZnw.jpg 1600w, https://marketplace.canva.com/EAD7qTMzIeE/1/0/400w/canva-b%C6%B0u-thi%E1%BA%BFp-%08in-t%C3%B4i-nh%E1%BB%9B-b%E1%BA%A1n-ho%E1%BA%A1-ti%E1%BA%BFt-ch%E1%BB%AF-vi%E1%BA%BFt-ngu%E1%BB%87ch-ngo%E1%BA%A1c-zMWah552zyo.jpg 400w, https://marketplace.canva.com/EAD7qTMzIeE/1/0/800w/canva-b%C6%B0u-thi%E1%BA%BFp-%08in-t%C3%B4i-nh%E1%BB%9B-b%E1%BA%A1n-ho%E1%BA%A1-ti%E1%BA%BFt-ch%E1%BB%AF-vi%E1%BA%BFt-ngu%E1%BB%87ch-ngo%E1%BA%A1c-oF_M0cH0OAc.jpg 800w" src="https://marketplace.canva.com/EAD7qTMzIeE/1/0/1600w/canva-b%C6%B0u-thi%E1%BA%BFp-%08in-t%C3%B4i-nh%E1%BB%9B-b%E1%BA%A1n-ho%E1%BA%A1-ti%E1%BA%BFt-ch%E1%BB%AF-vi%E1%BA%BFt-ngu%E1%BB%87ch-ngo%E1%BA%A1c--GrJ-0ZsZnw.jpg">
+                        </div>
+                        <div class="conten__body-need-img">
+                            <img class="w3KZWA" draggable="false" alt="Tím và Hồng Game thủ Cô gái Bài đăng Mạng xã hội" sizes="(max-width: 600px) 50vw, (max-width: 900px) 33vw, (max-width: 1200px) 25vw, (max-width: 1500px) 20vw, 17vw" srcset="https://marketplace.canva.com/EAEm9a4RROY/1/0/100w/canva-t%C3%ADm-v%C3%A0-h%E1%BB%93ng-game-th%E1%BB%A7-c%C3%B4-g%C3%A1i-b%C3%A0i-%C4%91%C4%83ng-m%E1%BA%A1ng-x%C3%A3-h%E1%BB%99i-pzs6egBSXlg.jpg 100w, https://marketplace.canva.com/EAEm9a4RROY/1/0/1600w/canva-t%C3%ADm-v%C3%A0-h%E1%BB%93ng-game-th%E1%BB%A7-c%C3%B4-g%C3%A1i-b%C3%A0i-%C4%91%C4%83ng-m%E1%BA%A1ng-x%C3%A3-h%E1%BB%99i-U2wb7tVWILU.jpg 1600w, https://marketplace.canva.com/EAEm9a4RROY/1/0/400w/canva-t%C3%ADm-v%C3%A0-h%E1%BB%93ng-game-th%E1%BB%A7-c%C3%B4-g%C3%A1i-b%C3%A0i-%C4%91%C4%83ng-m%E1%BA%A1ng-x%C3%A3-h%E1%BB%99i-7LU6Q27ftlk.jpg 400w, https://marketplace.canva.com/EAEm9a4RROY/1/0/800w/canva-t%C3%ADm-v%C3%A0-h%E1%BB%93ng-game-th%E1%BB%A7-c%C3%B4-g%C3%A1i-b%C3%A0i-%C4%91%C4%83ng-m%E1%BA%A1ng-x%C3%A3-h%E1%BB%99i-pfFEoXsJMIs.jpg 800w" src="https://marketplace.canva.com/EAEm9a4RROY/1/0/1600w/canva-t%C3%ADm-v%C3%A0-h%E1%BB%93ng-game-th%E1%BB%A7-c%C3%B4-g%C3%A1i-b%C3%A0i-%C4%91%C4%83ng-m%E1%BA%A1ng-x%C3%A3-h%E1%BB%99i-U2wb7tVWILU.jpg">
+                        </div>
+                        </div>
+                    <div class="conten__body-need-rows">
+                        <div class="conten__body-need-img">
+                            <img class="w3KZWA" draggable="false" alt="Hồng và Màu cam Đốm Màu nước Gia đình Ngày của Mẹ Áp phích" srcset="https://marketplace.canva.com/EAEeuNqneeI/1/0/1067w/canva-h%E1%BB%93ng-v%C3%A0-m%C3%A0u-cam-%C4%91%E1%BB%91m-m%C3%A0u-n%C6%B0%E1%BB%9Bc-gia-%C4%91%C3%ACnh-ng%C3%A0y-c%E1%BB%A7a-m%E1%BA%B9-%C3%A1p-ph%C3%ADch-jxQfhO39N4Y.jpg 1067w, https://marketplace.canva.com/EAEeuNqneeI/1/0/267w/canva-h%E1%BB%93ng-v%C3%A0-m%C3%A0u-cam-%C4%91%E1%BB%91m-m%C3%A0u-n%C6%B0%E1%BB%9Bc-gia-%C4%91%C3%ACnh-ng%C3%A0y-c%E1%BB%A7a-m%E1%BA%B9-%C3%A1p-ph%C3%ADch-qnXB9Nh0yis.jpg 267w, https://marketplace.canva.com/EAEeuNqneeI/1/0/533w/canva-h%E1%BB%93ng-v%C3%A0-m%C3%A0u-cam-%C4%91%E1%BB%91m-m%C3%A0u-n%C6%B0%E1%BB%9Bc-gia-%C4%91%C3%ACnh-ng%C3%A0y-c%E1%BB%A7a-m%E1%BA%B9-%C3%A1p-ph%C3%ADch-XyKJ-FcaYLo.jpg 533w, https://marketplace.canva.com/EAEeuNqneeI/1/0/67w/canva-h%E1%BB%93ng-v%C3%A0-m%C3%A0u-cam-%C4%91%E1%BB%91m-m%C3%A0u-n%C6%B0%E1%BB%9Bc-gia-%C4%91%C3%ACnh-ng%C3%A0y-c%E1%BB%A7a-m%E1%BA%B9-%C3%A1p-ph%C3%ADch-IyBAbPJdZrA.jpg 67w" sizes="(max-width: 600px) 50vw, (max-width: 900px) 33vw, (max-width: 1200px) 25vw, (max-width: 1500px) 20vw, 17vw" src="https://marketplace.canva.com/EAEeuNqneeI/1/0/1067w/canva-h%E1%BB%93ng-v%C3%A0-m%C3%A0u-cam-%C4%91%E1%BB%91m-m%C3%A0u-n%C6%B0%E1%BB%9Bc-gia-%C4%91%C3%ACnh-ng%C3%A0y-c%E1%BB%A7a-m%E1%BA%B9-%C3%A1p-ph%C3%ADch-jxQfhO39N4Y.jpg">
+                        </div>
+                        <div class="conten__body-need-img">
+                            <img class="w3KZWA" draggable="false" alt="Bài Đăng Instagram Đơn Sắc" sizes="(max-width: 600px) 50vw, (max-width: 900px) 33vw, (max-width: 1200px) 25vw, (max-width: 1500px) 20vw, 17vw" srcset="https://marketplace.canva.com/EADx0SagjnY/2/0/100w/canva-b%C3%A0i-%C4%91%C4%83ng-instagram-%C4%91%C6%A1n-s%E1%BA%AFc-Io5S-70IqFc.jpg 100w, https://marketplace.canva.com/EADx0SagjnY/2/0/1600w/canva-b%C3%A0i-%C4%91%C4%83ng-instagram-%C4%91%C6%A1n-s%E1%BA%AFc-DY_TAvDFi7c.jpg 1600w, https://marketplace.canva.com/EADx0SagjnY/2/0/400w/canva-b%C3%A0i-%C4%91%C4%83ng-instagram-%C4%91%C6%A1n-s%E1%BA%AFc--AIcwv12wr8.jpg 400w, https://marketplace.canva.com/EADx0SagjnY/2/0/800w/canva-b%C3%A0i-%C4%91%C4%83ng-instagram-%C4%91%C6%A1n-s%E1%BA%AFc-zlyqMmT9mbQ.jpg 800w" src="https://marketplace.canva.com/EADx0SagjnY/2/0/1600w/canva-b%C3%A0i-%C4%91%C4%83ng-instagram-%C4%91%C6%A1n-s%E1%BA%AFc-DY_TAvDFi7c.jpg">
+                        </div>
+                        <div class="conten__body-need-img">
+                            <img class="w3KZWA" draggable="false" alt="Xanh lá và Màu kem Hài hước và Vui tươi Siêu khuyến mãi hàng năm Quảng cáo trên bảng tin" sizes="(max-width: 600px) 50vw, (max-width: 900px) 33vw, (max-width: 1200px) 25vw, (max-width: 1500px) 20vw, 17vw" srcset="https://marketplace.canva.com/EAEml6sdUkY/1/0/100w/canva-xanh-l%C3%A1-v%C3%A0-m%C3%A0u-kem-h%C3%A0i-h%C6%B0%E1%BB%9Bc-v%C3%A0-vui-t%C6%B0%C6%A1i-si%C3%AAu-khuy%E1%BA%BFn-m%C3%A3i-h%C3%A0ng-n%C4%83m-qu%E1%BA%A3ng-c%C3%A1o-tr%C3%AAn-b%E1%BA%A3ng-tin-U06wbrn1e3A.jpg 100w, https://marketplace.canva.com/EAEml6sdUkY/1/0/1600w/canva-xanh-l%C3%A1-v%C3%A0-m%C3%A0u-kem-h%C3%A0i-h%C6%B0%E1%BB%9Bc-v%C3%A0-vui-t%C6%B0%C6%A1i-si%C3%AAu-khuy%E1%BA%BFn-m%C3%A3i-h%C3%A0ng-n%C4%83m-qu%E1%BA%A3ng-c%C3%A1o-tr%C3%AAn-b%E1%BA%A3ng-tin-ef_-Z8TE4Qg.jpg 1600w, https://marketplace.canva.com/EAEml6sdUkY/1/0/400w/canva-xanh-l%C3%A1-v%C3%A0-m%C3%A0u-kem-h%C3%A0i-h%C6%B0%E1%BB%9Bc-v%C3%A0-vui-t%C6%B0%C6%A1i-si%C3%AAu-khuy%E1%BA%BFn-m%C3%A3i-h%C3%A0ng-n%C4%83m-qu%E1%BA%A3ng-c%C3%A1o-tr%C3%AAn-b%E1%BA%A3ng-tin-beQDnYTVzEg.jpg 400w, https://marketplace.canva.com/EAEml6sdUkY/1/0/800w/canva-xanh-l%C3%A1-v%C3%A0-m%C3%A0u-kem-h%C3%A0i-h%C6%B0%E1%BB%9Bc-v%C3%A0-vui-t%C6%B0%C6%A1i-si%C3%AAu-khuy%E1%BA%BFn-m%C3%A3i-h%C3%A0ng-n%C4%83m-qu%E1%BA%A3ng-c%C3%A1o-tr%C3%AAn-b%E1%BA%A3ng-tin-VXGFSCY-27I.jpg 800w" src="https://marketplace.canva.com/EAEml6sdUkY/1/0/1600w/canva-xanh-l%C3%A1-v%C3%A0-m%C3%A0u-kem-h%C3%A0i-h%C6%B0%E1%BB%9Bc-v%C3%A0-vui-t%C6%B0%C6%A1i-si%C3%AAu-khuy%E1%BA%BFn-m%C3%A3i-h%C3%A0ng-n%C4%83m-qu%E1%BA%A3ng-c%C3%A1o-tr%C3%AAn-b%E1%BA%A3ng-tin-ef_-Z8TE4Qg.jpg">
+                        </div>
+                     </div>
+                    <div class="conten__body-need-rows">
+                        <div class="conten__body-need-img">
+                            <img class="w3KZWA" draggable="false" alt="Xanh lá và Màu kem Hài hước và Vui tươi Siêu khuyến mãi hàng năm Quảng cáo trên bảng tin" sizes="(max-width: 600px) 50vw, (max-width: 900px) 33vw, (max-width: 1200px) 25vw, (max-width: 1500px) 20vw, 17vw" srcset="https://marketplace.canva.com/EAEml6sdUkY/1/0/100w/canva-xanh-l%C3%A1-v%C3%A0-m%C3%A0u-kem-h%C3%A0i-h%C6%B0%E1%BB%9Bc-v%C3%A0-vui-t%C6%B0%C6%A1i-si%C3%AAu-khuy%E1%BA%BFn-m%C3%A3i-h%C3%A0ng-n%C4%83m-qu%E1%BA%A3ng-c%C3%A1o-tr%C3%AAn-b%E1%BA%A3ng-tin-U06wbrn1e3A.jpg 100w, https://marketplace.canva.com/EAEml6sdUkY/1/0/1600w/canva-xanh-l%C3%A1-v%C3%A0-m%C3%A0u-kem-h%C3%A0i-h%C6%B0%E1%BB%9Bc-v%C3%A0-vui-t%C6%B0%C6%A1i-si%C3%AAu-khuy%E1%BA%BFn-m%C3%A3i-h%C3%A0ng-n%C4%83m-qu%E1%BA%A3ng-c%C3%A1o-tr%C3%AAn-b%E1%BA%A3ng-tin-ef_-Z8TE4Qg.jpg 1600w, https://marketplace.canva.com/EAEml6sdUkY/1/0/400w/canva-xanh-l%C3%A1-v%C3%A0-m%C3%A0u-kem-h%C3%A0i-h%C6%B0%E1%BB%9Bc-v%C3%A0-vui-t%C6%B0%C6%A1i-si%C3%AAu-khuy%E1%BA%BFn-m%C3%A3i-h%C3%A0ng-n%C4%83m-qu%E1%BA%A3ng-c%C3%A1o-tr%C3%AAn-b%E1%BA%A3ng-tin-beQDnYTVzEg.jpg 400w, https://marketplace.canva.com/EAEml6sdUkY/1/0/800w/canva-xanh-l%C3%A1-v%C3%A0-m%C3%A0u-kem-h%C3%A0i-h%C6%B0%E1%BB%9Bc-v%C3%A0-vui-t%C6%B0%C6%A1i-si%C3%AAu-khuy%E1%BA%BFn-m%C3%A3i-h%C3%A0ng-n%C4%83m-qu%E1%BA%A3ng-c%C3%A1o-tr%C3%AAn-b%E1%BA%A3ng-tin-VXGFSCY-27I.jpg 800w" src="https://marketplace.canva.com/EAEml6sdUkY/1/0/1600w/canva-xanh-l%C3%A1-v%C3%A0-m%C3%A0u-kem-h%C3%A0i-h%C6%B0%E1%BB%9Bc-v%C3%A0-vui-t%C6%B0%C6%A1i-si%C3%AAu-khuy%E1%BA%BFn-m%C3%A3i-h%C3%A0ng-n%C4%83m-qu%E1%BA%A3ng-c%C3%A1o-tr%C3%AAn-b%E1%BA%A3ng-tin-ef_-Z8TE4Qg.jpg">
+                        </div>
+                        <div class="conten__body-need-img">
+                            <img class="w3KZWA" draggable="false" alt="Hồng và Đỏ Hoa Hoa Lời chúc mừng Chung Dễ thương &amp; Thân thiện Ngày của Mẹ Áp phích" sizes="(max-width: 600px) 50vw, (max-width: 900px) 33vw, (max-width: 1200px) 25vw, (max-width: 1500px) 20vw, 17vw" srcset="https://marketplace.canva.com/EAEfKUCuBnk/1/0/1280w/canva-h%E1%BB%93ng-v%C3%A0-%C4%91%E1%BB%8F-hoa-hoa-l%E1%BB%9Di-ch%C3%BAc-m%E1%BB%ABng-chung-d%E1%BB%85-th%C6%B0%C6%A1ng-%26-th%C3%A2n-thi%E1%BB%87n-ng%C3%A0y-c%E1%BB%A7a-m%E1%BA%B9-%C3%A1p-ph%C3%ADch-3zqcalHCh6A.jpg 1280w, https://marketplace.canva.com/EAEfKUCuBnk/1/0/320w/canva-h%E1%BB%93ng-v%C3%A0-%C4%91%E1%BB%8F-hoa-hoa-l%E1%BB%9Di-ch%C3%BAc-m%E1%BB%ABng-chung-d%E1%BB%85-th%C6%B0%C6%A1ng-%26-th%C3%A2n-thi%E1%BB%87n-ng%C3%A0y-c%E1%BB%A7a-m%E1%BA%B9-%C3%A1p-ph%C3%ADch-sVtzPI6oJPc.jpg 320w, https://marketplace.canva.com/EAEfKUCuBnk/1/0/640w/canva-h%E1%BB%93ng-v%C3%A0-%C4%91%E1%BB%8F-hoa-hoa-l%E1%BB%9Di-ch%C3%BAc-m%E1%BB%ABng-chung-d%E1%BB%85-th%C6%B0%C6%A1ng-%26-th%C3%A2n-thi%E1%BB%87n-ng%C3%A0y-c%E1%BB%A7a-m%E1%BA%B9-%C3%A1p-ph%C3%ADch-gSFngGFv_wM.jpg 640w, https://marketplace.canva.com/EAEfKUCuBnk/1/0/80w/canva-h%E1%BB%93ng-v%C3%A0-%C4%91%E1%BB%8F-hoa-hoa-l%E1%BB%9Di-ch%C3%BAc-m%E1%BB%ABng-chung-d%E1%BB%85-th%C6%B0%C6%A1ng-%26-th%C3%A2n-thi%E1%BB%87n-ng%C3%A0y-c%E1%BB%A7a-m%E1%BA%B9-%C3%A1p-ph%C3%ADch-rqQ3D2cDnsU.jpg 80w" src="https://marketplace.canva.com/EAEfKUCuBnk/1/0/1280w/canva-h%E1%BB%93ng-v%C3%A0-%C4%91%E1%BB%8F-hoa-hoa-l%E1%BB%9Di-ch%C3%BAc-m%E1%BB%ABng-chung-d%E1%BB%85-th%C6%B0%C6%A1ng-%26-th%C3%A2n-thi%E1%BB%87n-ng%C3%A0y-c%E1%BB%A7a-m%E1%BA%B9-%C3%A1p-ph%C3%ADch-3zqcalHCh6A.jpg">
+                        </div>
+                        <div class="conten__body-need-img">
+                            <img class="w3KZWA" draggable="false" alt="Đen và Màu be Hiện đại Tối giản Kinh doanh Lời cảm ơn chung chung Thiệp gấp" sizes="(max-width: 600px) 50vw, (max-width: 900px) 33vw, (max-width: 1200px) 25vw, (max-width: 1500px) 20vw, 17vw" srcset="https://marketplace.canva.com/EAEPjdjYOk8/1/0/100w/canva-%C4%91en-v%C3%A0-m%C3%A0u-be-hi%E1%BB%87n-%C4%91%E1%BA%A1i-t%E1%BB%91i-gi%E1%BA%A3n-kinh-doanh-l%E1%BB%9Di-c%E1%BA%A3m-%C6%A1n-chung-chung-thi%E1%BB%87p-g%E1%BA%A5p-PK5jBBkl6OU.jpg 100w, https://marketplace.canva.com/EAEPjdjYOk8/1/0/1600w/canva-%C4%91en-v%C3%A0-m%C3%A0u-be-hi%E1%BB%87n-%C4%91%E1%BA%A1i-t%E1%BB%91i-gi%E1%BA%A3n-kinh-doanh-l%E1%BB%9Di-c%E1%BA%A3m-%C6%A1n-chung-chung-thi%E1%BB%87p-g%E1%BA%A5p-1Ccj4WGO7uw.jpg 1600w, https://marketplace.canva.com/EAEPjdjYOk8/1/0/400w/canva-%C4%91en-v%C3%A0-m%C3%A0u-be-hi%E1%BB%87n-%C4%91%E1%BA%A1i-t%E1%BB%91i-gi%E1%BA%A3n-kinh-doanh-l%E1%BB%9Di-c%E1%BA%A3m-%C6%A1n-chung-chung-thi%E1%BB%87p-g%E1%BA%A5p-NPUDgPbh_xY.jpg 400w, https://marketplace.canva.com/EAEPjdjYOk8/1/0/800w/canva-%C4%91en-v%C3%A0-m%C3%A0u-be-hi%E1%BB%87n-%C4%91%E1%BA%A1i-t%E1%BB%91i-gi%E1%BA%A3n-kinh-doanh-l%E1%BB%9Di-c%E1%BA%A3m-%C6%A1n-chung-chung-thi%E1%BB%87p-g%E1%BA%A5p-kcXp6wSiIJs.jpg 800w" src="https://marketplace.canva.com/EAEPjdjYOk8/1/0/1600w/canva-%C4%91en-v%C3%A0-m%C3%A0u-be-hi%E1%BB%87n-%C4%91%E1%BA%A1i-t%E1%BB%91i-gi%E1%BA%A3n-kinh-doanh-l%E1%BB%9Di-c%E1%BA%A3m-%C6%A1n-chung-chung-thi%E1%BB%87p-g%E1%BA%A5p-1Ccj4WGO7uw.jpg">
+                    </div>
+                     </div>
+                    <div class="conten__body-need-rows">
+                        <div class="conten__body-need-img">
+                            <img class="w3KZWA" draggable="false" alt="Đen và Màu be Hiện đại Tối giản Kinh doanh Lời cảm ơn chung chung Thiệp gấp" sizes="(max-width: 600px) 50vw, (max-width: 900px) 33vw, (max-width: 1200px) 25vw, (max-width: 1500px) 20vw, 17vw" srcset="https://marketplace.canva.com/EAEPjdjYOk8/1/0/100w/canva-%C4%91en-v%C3%A0-m%C3%A0u-be-hi%E1%BB%87n-%C4%91%E1%BA%A1i-t%E1%BB%91i-gi%E1%BA%A3n-kinh-doanh-l%E1%BB%9Di-c%E1%BA%A3m-%C6%A1n-chung-chung-thi%E1%BB%87p-g%E1%BA%A5p-PK5jBBkl6OU.jpg 100w, https://marketplace.canva.com/EAEPjdjYOk8/1/0/1600w/canva-%C4%91en-v%C3%A0-m%C3%A0u-be-hi%E1%BB%87n-%C4%91%E1%BA%A1i-t%E1%BB%91i-gi%E1%BA%A3n-kinh-doanh-l%E1%BB%9Di-c%E1%BA%A3m-%C6%A1n-chung-chung-thi%E1%BB%87p-g%E1%BA%A5p-1Ccj4WGO7uw.jpg 1600w, https://marketplace.canva.com/EAEPjdjYOk8/1/0/400w/canva-%C4%91en-v%C3%A0-m%C3%A0u-be-hi%E1%BB%87n-%C4%91%E1%BA%A1i-t%E1%BB%91i-gi%E1%BA%A3n-kinh-doanh-l%E1%BB%9Di-c%E1%BA%A3m-%C6%A1n-chung-chung-thi%E1%BB%87p-g%E1%BA%A5p-NPUDgPbh_xY.jpg 400w, https://marketplace.canva.com/EAEPjdjYOk8/1/0/800w/canva-%C4%91en-v%C3%A0-m%C3%A0u-be-hi%E1%BB%87n-%C4%91%E1%BA%A1i-t%E1%BB%91i-gi%E1%BA%A3n-kinh-doanh-l%E1%BB%9Di-c%E1%BA%A3m-%C6%A1n-chung-chung-thi%E1%BB%87p-g%E1%BA%A5p-kcXp6wSiIJs.jpg 800w" src="https://marketplace.canva.com/EAEPjdjYOk8/1/0/1600w/canva-%C4%91en-v%C3%A0-m%C3%A0u-be-hi%E1%BB%87n-%C4%91%E1%BA%A1i-t%E1%BB%91i-gi%E1%BA%A3n-kinh-doanh-l%E1%BB%9Di-c%E1%BA%A3m-%C6%A1n-chung-chung-thi%E1%BB%87p-g%E1%BA%A5p-1Ccj4WGO7uw.jpg">
+                        </div>
+                        <div class="conten__body-need-img">
+                            <img class="w3KZWA" draggable="false" alt="Đen và Màu be Hiện đại Tối giản Kinh doanh Lời cảm ơn chung chung Thiệp gấp" sizes="(max-width: 600px) 50vw, (max-width: 900px) 33vw, (max-width: 1200px) 25vw, (max-width: 1500px) 20vw, 17vw" srcset="https://marketplace.canva.com/EAEPjdjYOk8/1/0/100w/canva-%C4%91en-v%C3%A0-m%C3%A0u-be-hi%E1%BB%87n-%C4%91%E1%BA%A1i-t%E1%BB%91i-gi%E1%BA%A3n-kinh-doanh-l%E1%BB%9Di-c%E1%BA%A3m-%C6%A1n-chung-chung-thi%E1%BB%87p-g%E1%BA%A5p-PK5jBBkl6OU.jpg 100w, https://marketplace.canva.com/EAEPjdjYOk8/1/0/1600w/canva-%C4%91en-v%C3%A0-m%C3%A0u-be-hi%E1%BB%87n-%C4%91%E1%BA%A1i-t%E1%BB%91i-gi%E1%BA%A3n-kinh-doanh-l%E1%BB%9Di-c%E1%BA%A3m-%C6%A1n-chung-chung-thi%E1%BB%87p-g%E1%BA%A5p-1Ccj4WGO7uw.jpg 1600w, https://marketplace.canva.com/EAEPjdjYOk8/1/0/400w/canva-%C4%91en-v%C3%A0-m%C3%A0u-be-hi%E1%BB%87n-%C4%91%E1%BA%A1i-t%E1%BB%91i-gi%E1%BA%A3n-kinh-doanh-l%E1%BB%9Di-c%E1%BA%A3m-%C6%A1n-chung-chung-thi%E1%BB%87p-g%E1%BA%A5p-NPUDgPbh_xY.jpg 400w, https://marketplace.canva.com/EAEPjdjYOk8/1/0/800w/canva-%C4%91en-v%C3%A0-m%C3%A0u-be-hi%E1%BB%87n-%C4%91%E1%BA%A1i-t%E1%BB%91i-gi%E1%BA%A3n-kinh-doanh-l%E1%BB%9Di-c%E1%BA%A3m-%C6%A1n-chung-chung-thi%E1%BB%87p-g%E1%BA%A5p-kcXp6wSiIJs.jpg 800w" src="https://marketplace.canva.com/EAEPjdjYOk8/1/0/1600w/canva-%C4%91en-v%C3%A0-m%C3%A0u-be-hi%E1%BB%87n-%C4%91%E1%BA%A1i-t%E1%BB%91i-gi%E1%BA%A3n-kinh-doanh-l%E1%BB%9Di-c%E1%BA%A3m-%C6%A1n-chung-chung-thi%E1%BB%87p-g%E1%BA%A5p-1Ccj4WGO7uw.jpg">
+                        </div>
+                        </div>
+                    <div class="conten__body-need-rows">
+                        <div class="conten__body-need-img">
+                            <img class="w3KZWA" draggable="false" alt="Bài Đăng Instagram Đám Cưới Đừng Quên Ngày Này Màu Tím" srcset="https://marketplace.canva.com/EADzX78xyS0/2/0/100w/canva-b%C3%A0i-%C4%91%C4%83ng-instagram-%C4%91%C3%A1m-c%C6%B0%E1%BB%9Bi-%C4%91%E1%BB%ABng-qu%C3%AAn-ng%C3%A0y-n%C3%A0y-m%C3%A0u-t%C3%ADm-Z2si7x8lunQ.jpg 100w, https://marketplace.canva.com/EADzX78xyS0/2/0/1600w/canva-b%C3%A0i-%C4%91%C4%83ng-instagram-%C4%91%C3%A1m-c%C6%B0%E1%BB%9Bi-%C4%91%E1%BB%ABng-qu%C3%AAn-ng%C3%A0y-n%C3%A0y-m%C3%A0u-t%C3%ADm-svqU_6sEAl8.jpg 1600w, https://marketplace.canva.com/EADzX78xyS0/2/0/400w/canva-b%C3%A0i-%C4%91%C4%83ng-instagram-%C4%91%C3%A1m-c%C6%B0%E1%BB%9Bi-%C4%91%E1%BB%ABng-qu%C3%AAn-ng%C3%A0y-n%C3%A0y-m%C3%A0u-t%C3%ADm-4ZXualLns9U.jpg 400w, https://marketplace.canva.com/EADzX78xyS0/2/0/800w/canva-b%C3%A0i-%C4%91%C4%83ng-instagram-%C4%91%C3%A1m-c%C6%B0%E1%BB%9Bi-%C4%91%E1%BB%ABng-qu%C3%AAn-ng%C3%A0y-n%C3%A0y-m%C3%A0u-t%C3%ADm-y9_ih_VJNMA.jpg 800w" sizes="(max-width: 600px) 50vw, (max-width: 900px) 33vw, (max-width: 1200px) 25vw, (max-width: 1500px) 20vw, 17vw" src="https://marketplace.canva.com/EADzX78xyS0/2/0/1600w/canva-b%C3%A0i-%C4%91%C4%83ng-instagram-%C4%91%C3%A1m-c%C6%B0%E1%BB%9Bi-%C4%91%E1%BB%ABng-qu%C3%AAn-ng%C3%A0y-n%C3%A0y-m%C3%A0u-t%C3%ADm-svqU_6sEAl8.jpg"> 
+                        </div>
+                        <div class="conten__body-need-img">
+                            <img class="w3KZWA" draggable="false" alt="Vàng Đen Vị lợi Sức khỏe &amp; An toàn tại nơi làm việc Bài đăng Mạng xã hội Giải thích về Sức khỏe" sizes="(max-width: 600px) 50vw, (max-width: 900px) 33vw, (max-width: 1200px) 25vw, (max-width: 1500px) 20vw, 17vw" srcset="https://marketplace.canva.com/EAEdyPtD-LU/1/0/100w/canva-v%C3%A0ng-%C4%91en-v%E1%BB%8B-l%E1%BB%A3i-s%E1%BB%A9c-kh%E1%BB%8Fe-%26-an-to%C3%A0n-t%E1%BA%A1i-n%C6%A1i-l%C3%A0m-vi%E1%BB%87c-b%C3%A0i-%C4%91%C4%83ng-m%E1%BA%A1ng-x%C3%A3-h%E1%BB%99i-gi%E1%BA%A3i-th%C3%ADch-v%E1%BB%81-s%E1%BB%A9c-kh%E1%BB%8Fe-YtrN0DKCwF0.jpg 100w, https://marketplace.canva.com/EAEdyPtD-LU/1/0/1600w/canva-v%C3%A0ng-%C4%91en-v%E1%BB%8B-l%E1%BB%A3i-s%E1%BB%A9c-kh%E1%BB%8Fe-%26-an-to%C3%A0n-t%E1%BA%A1i-n%C6%A1i-l%C3%A0m-vi%E1%BB%87c-b%C3%A0i-%C4%91%C4%83ng-m%E1%BA%A1ng-x%C3%A3-h%E1%BB%99i-gi%E1%BA%A3i-th%C3%ADch-v%E1%BB%81-s%E1%BB%A9c-kh%E1%BB%8Fe-idHf1XWBTpw.jpg 1600w, https://marketplace.canva.com/EAEdyPtD-LU/1/0/400w/canva-v%C3%A0ng-%C4%91en-v%E1%BB%8B-l%E1%BB%A3i-s%E1%BB%A9c-kh%E1%BB%8Fe-%26-an-to%C3%A0n-t%E1%BA%A1i-n%C6%A1i-l%C3%A0m-vi%E1%BB%87c-b%C3%A0i-%C4%91%C4%83ng-m%E1%BA%A1ng-x%C3%A3-h%E1%BB%99i-gi%E1%BA%A3i-th%C3%ADch-v%E1%BB%81-s%E1%BB%A9c-kh%E1%BB%8Fe-uIuy_nHbNOg.jpg 400w, https://marketplace.canva.com/EAEdyPtD-LU/1/0/800w/canva-v%C3%A0ng-%C4%91en-v%E1%BB%8B-l%E1%BB%A3i-s%E1%BB%A9c-kh%E1%BB%8Fe-%26-an-to%C3%A0n-t%E1%BA%A1i-n%C6%A1i-l%C3%A0m-vi%E1%BB%87c-b%C3%A0i-%C4%91%C4%83ng-m%E1%BA%A1ng-x%C3%A3-h%E1%BB%99i-gi%E1%BA%A3i-th%C3%ADch-v%E1%BB%81-s%E1%BB%A9c-kh%E1%BB%8Fe-nOg8Zpik_sc.jpg 800w" src="https://marketplace.canva.com/EAEdyPtD-LU/1/0/1600w/canva-v%C3%A0ng-%C4%91en-v%E1%BB%8B-l%E1%BB%A3i-s%E1%BB%A9c-kh%E1%BB%8Fe-%26-an-to%C3%A0n-t%E1%BA%A1i-n%C6%A1i-l%C3%A0m-vi%E1%BB%87c-b%C3%A0i-%C4%91%C4%83ng-m%E1%BA%A1ng-x%C3%A3-h%E1%BB%99i-gi%E1%BA%A3i-th%C3%ADch-v%E1%BB%81-s%E1%BB%A9c-kh%E1%BB%8Fe-idHf1XWBTpw.jpg">
+                        </div>
+                        <div class="conten__body-need-img">
+                            <img class="w3KZWA" draggable="false" alt="Xanh dương nhạt và Hồng Y tá Màu nước Cọ Kinh doanh / Dịch vụ Cảm ơn Thiệp phẳng" srcset="https://marketplace.canva.com/EAEaw96nqoo/2/0/100w/canva-xanh-d%C6%B0%C6%A1ng-nh%E1%BA%A1t-v%C3%A0-h%E1%BB%93ng-y-t%C3%A1-m%C3%A0u-n%C6%B0%E1%BB%9Bc-c%E1%BB%8D-kinh-doanh-d%E1%BB%8Bch-v%E1%BB%A5-c%E1%BA%A3m-%C6%A1n-thi%E1%BB%87p-ph%E1%BA%B3ng-vz3X_iEelmM.jpg 100w, https://marketplace.canva.com/EAEaw96nqoo/2/0/1600w/canva-xanh-d%C6%B0%C6%A1ng-nh%E1%BA%A1t-v%C3%A0-h%E1%BB%93ng-y-t%C3%A1-m%C3%A0u-n%C6%B0%E1%BB%9Bc-c%E1%BB%8D-kinh-doanh-d%E1%BB%8Bch-v%E1%BB%A5-c%E1%BA%A3m-%C6%A1n-thi%E1%BB%87p-ph%E1%BA%B3ng-074A6brDaBA.jpg 1600w, https://marketplace.canva.com/EAEaw96nqoo/2/0/400w/canva-xanh-d%C6%B0%C6%A1ng-nh%E1%BA%A1t-v%C3%A0-h%E1%BB%93ng-y-t%C3%A1-m%C3%A0u-n%C6%B0%E1%BB%9Bc-c%E1%BB%8D-kinh-doanh-d%E1%BB%8Bch-v%E1%BB%A5-c%E1%BA%A3m-%C6%A1n-thi%E1%BB%87p-ph%E1%BA%B3ng-JlqPQQ-5xd8.jpg 400w, https://marketplace.canva.com/EAEaw96nqoo/2/0/800w/canva-xanh-d%C6%B0%C6%A1ng-nh%E1%BA%A1t-v%C3%A0-h%E1%BB%93ng-y-t%C3%A1-m%C3%A0u-n%C6%B0%E1%BB%9Bc-c%E1%BB%8D-kinh-doanh-d%E1%BB%8Bch-v%E1%BB%A5-c%E1%BA%A3m-%C6%A1n-thi%E1%BB%87p-ph%E1%BA%B3ng-JSgaWrz8DlA.jpg 800w" sizes="(max-width: 600px) 50vw, (max-width: 900px) 33vw, (max-width: 1200px) 25vw, (max-width: 1500px) 20vw, 17vw" src="https://marketplace.canva.com/EAEaw96nqoo/2/0/1600w/canva-xanh-d%C6%B0%C6%A1ng-nh%E1%BA%A1t-v%C3%A0-h%E1%BB%93ng-y-t%C3%A1-m%C3%A0u-n%C6%B0%E1%BB%9Bc-c%E1%BB%8D-kinh-doanh-d%E1%BB%8Bch-v%E1%BB%A5-c%E1%BA%A3m-%C6%A1n-thi%E1%BB%87p-ph%E1%BA%B3ng-074A6brDaBA.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="conten__body-teamword">
+                    <div class="conten__body-teamword-text">
+                        <p class="conten__body-teamword-header">
+                            Làm việc độc lập hoặc theo đội
+                        </p>
+                        <p class="conten__body-teamword-body">
+                            Dù làm việc độc lập hay là thành viên trong một đội bất kể lớn, nhỏ, tại địa phương hoặc có quy mô toàn cầu, bạn đều có thể hoàn thành mọi công việc và trao đổi thông tin tại đây, đồng thời luôn giữ đúng chuẩn thương hiệu.
+                        </p>
+                    </div>
+                    <div class="conten__body-teamword-conten">
+                        <span class="conten__body-teamword-conten-list-ul">
+                            <ul class="conten__body-teamword-conten-list">
+                                <li class="conten__body-teamword-conten-item">
+                                    <span aria-hidden="true" class="bjwjkA "><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.078 5.333H5.334A2.667 2.667 0 0 0 2.667 8v2.667c0 .203.023.402.066.592a2.315 2.315 0 0 0-.066.55v12.382c0 1.367 1.194 2.476 2.667 2.476h21.333c1.473 0 2.667-1.109 2.667-2.477V11.81c0-1.368-1.194-2.477-2.667-2.477h-9.333l-.726-2.176a2.667 2.667 0 0 0-2.53-1.824zm-8.744 4h9.892L14.71 7.79a.667.667 0 0 0-.633-.456H5.334A.667.667 0 0 0 4.667 8v1.411c.213-.05.436-.078.667-.078zm-.667 2.477c0-.229.267-.477.667-.477h21.333c.4 0 .667.248.667.477v12.38c0 .229-.267.477-.667.477H5.334c-.4 0-.667-.248-.667-.477V11.81z" fill="currentColor"></path></svg></span>
+                                    <div class="conten__body-teamword-conten-item-text">
+                                        Thư mục của đội giúp bạn luôn sắp xếp ngăn nắp, lưu trữ tài sản thương hiệu và quản lý nội dung
+                                    </div>
+                                </li>
+                                <li class="conten__body-teamword-conten-item">
+                                    <span aria-hidden="true" class="bjwjkA "><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.5 23.8a.823.823 0 0 0-.833.813c0 .448.373.812.833.812h1c.46 0 .833-.364.833-.813a.823.823 0 0 0-.833-.812h-1z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M24 5.6C24 4.164 22.806 3 21.333 3H10.667C9.194 3 8 4.164 8 5.6v20.8c0 1.436 1.194 2.6 2.667 2.6h10.666C22.806 29 24 27.836 24 26.4V5.6zm-13.333-.65h10.666c.369 0 .667.291.667.65v3.25H10V5.6c0-.359.299-.65.667-.65zM10 20.225V10.8h12v9.425H10zm12 1.95V26.4c0 .359-.299.65-.667.65H10.667A.659.659 0 0 1 10 26.4v-4.225h12z" fill="currentColor"></path></svg></span>
+                                    <div class="conten__body-teamword-conten-item-text">
+                                        
+                                    Lên kế hoạch, tạo, lên lịch và đăng bài lên mạng xã hội ngay từ Canva
+                                    </div>
+                                </li>
+                                <li class="conten__body-teamword-conten-item">
+                                    <span aria-hidden="true" class="bjwjkA "><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path fill="currentColor" d="M7.7 17c.5 0 1 .4 1 1s-.5 1-1 1H5.3v2.3c0 .6-.4 1-1 1a1 1 0 0 1-1-1V19H1c-.6 0-1-.4-1-1s.4-1 1-1h2.3v-2.3c0-.6.5-1 1-1 .6 0 1 .4 1 1V17h2.4zm18.1 5H30c0-.4-.3-.8-.6-1L26 19.5c-.8-.3-1.2-1-1.2-1.8V17c0-.7.3-1.3.8-1.7 1.3-.8 2.3-3.3 2.3-5.6 0-2.6-1.1-3.7-3.3-3.7h-.5c-.2-.6-.5-1.2-1-1.8.3-.1 1.1-.2 1.5-.2 3.2 0 5.3 1.9 5.3 5.7 0 2.2-.9 3.5-2.1 6.3l-1 1v.7l3.4 1.5c1.1.5 1.8 1.6 1.8 2.8a2 2 0 0 1-2 2h-3.1c-.2-.7-.5-1.4-1.1-2zm-6.4-1.7l3.6 1.6c1.4.6 2.3 2 2.3 3.6v.5a2 2 0 0 1-2 2H8.7a2 2 0 0 1-2-2v-.5c0-1.6.9-3 2.3-3.6l3.7-1.6v-1.6c-2.1-1.9-3.4-5.4-3.4-8.7 0-4.8 2.6-7.3 6.7-7.3 4 0 6.7 2.3 6.7 7.1 0 3.3-1.3 6.8-3.3 8.8v1.7zm-2-1.7c0-.6.2-1.1.6-1.5 1.6-1.5 2.7-4.4 2.7-7.3 0-3.5-1.6-5.1-4.7-5.1s-4.7 1.7-4.7 5.3c0 2.9 1.1 5.8 2.7 7.2.4.4.7.9.7 1.5v1.6c0 .8-.5 1.6-1.2 1.9l-3.7 1.6c-.7.3-1.1.9-1.1 1.7v.5h14.6v-.5c0-.8-.4-1.5-1.1-1.8l-3.6-1.6c-.8-.3-1.2-1-1.2-1.8v-1.7z"></path></svg></span>
+                                    <div class="conten__body-teamword-conten-item-text">
+                                        
+                                    Cộng tác trong thời gian thực ở khắp các quốc gia, công ty và bộ phận
+                                    </div>                                
+                                </li>
+                                <li class="conten__body-teamword-conten-item">
+                                    <span aria-hidden="true" class="bjwjkA "><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M28.996 14.696c.003.1.004.202.004.304 0 5.68-4.581 10.288-10.25 10.333-.022.01-.058.026-.11.055-.148.08-.345.208-.585.384-.477.352-1.043.833-1.598 1.33-.551.494-1.074.987-1.462 1.357l-.194.186c-.11.103-.203.193-.276.262a7.69 7.69 0 0 1-.15.139 1.669 1.669 0 0 1-.09.075h-.001c-.012.01-.074.058-.158.101h-.001a1.006 1.006 0 0 1-1.168-.182 1 1 0 0 1-.292-.707v-3.02C7.269 24.967 3 20.482 3 15 3 9.293 7.626 4.667 13.333 4.667h5.334c.264 0 .525.01.784.03a7.281 7.281 0 0 0-.664 1.97h-5.454a8.333 8.333 0 1 0 0 16.666h1.332v2.695c.148-.137.302-.276.457-.416a24.946 24.946 0 0 1 1.747-1.45c.276-.203.556-.392.82-.534.22-.12.584-.295.978-.295a8.333 8.333 0 0 0 8.329-8.067 7.283 7.283 0 0 0 2-.57z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M25 11.667a1 1 0 1 0 2 0V9h2.666a1 1 0 1 0 0-2H27V4.333a1 1 0 1 0-2 0V7h-2.667a1 1 0 1 0 0 2H25v2.667z" fill="currentColor"></path></svg></span>
+                                    <div class="conten__body-teamword-conten-item-text">
+
+                                        Tính năng nhận xét tích hợp giúp bạn trao đổi, làm việc và xử lý các nội dung đề xuất trong thời gian thực.
+                                    </div>
+                                </li>
+                            </ul>
+                        </span>
+                        
+                        <div>
+                            <img class="w3KZWA" draggable="false" alt="" srcset="https://static.canva.com/marketplace/login/teams-en-1150x850.png 1150w" src="https://static.canva.com/marketplace/login/teams-en-1150x850.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="conten__end">
+                    <div class="conten__end-text">
+                        Hoàn toàn phù hợp cho mọi đội
+                    </div>
+                    <div class="conten__end-list">
+                        <ul class="conten__end-list-col">
+                            <li class="conten__end-item">
+                                <div class="conten__end-item-head" >
+                                    Canva Miễn phí
+                                </div>
+                                <div class="conten__end-item-body" style="margin-bottom: 84px;">
+                                    Dành cho những người và đội muốn thiết kế bất kỳ thứ gì, từ logo, nội dung mạng xã hội cho đến tài liệu, bản in và nhiều nội dung khác. Vô số mẫu, ảnh và phông chữ miễn phí để hiện thực hóa ý tưởng của bạn.
+                                </div>
+                                <button class="header-form__register js-header-register" style="width:100%">Tải Canva Miễn phí</button>
+                            </li>
+                            <li class="conten__end-item">
+                                <div class="conten__end-item-head" >
+                                    Canva Pro
+                                </div>
+                                <div class="conten__end-item-body" style="margin-bottom: 84px;">
+                                    Dành cho những người và đội muốn cộng tác và phát triển doanh nghiệp. Bao gồm lên lịch đăng lên mạng xã hội, mẫu cho đội, quản lý thương hiệu và các công cụ năng suất khác.
+                                </div>
+                                <button class="header-form__register js-header-register" style="width:100%">Bắt đầu dùng thử miễn phí</button>
+                            </li>
+                            <li class="conten__end-item">
+                                <div class="conten__end-item-head ">
+                                    Canva dành cho doanh nghiệp
+                                </div>
+                                <div class="conten__end-item-body">
+                                    Dành cho các tổ chức lớn cần công cụ thiết kế và giao tiếp ở quy mô lớn. Đơn giản hóa công việc của đội bằng các phần tích hợp với công cụ bạn sử dụng hàng ngày, bảo mật nâng cao và quy trình xét duyệt tích hợp sẵn. Tối thiểu 20 người dùng.
+                                </div>
+                                <button class="header-form__register js-header-register" style="width:100%">Tìm hiểu thêm</button>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="conten__body-icon">
+                    <span class="conten__body-icon-text">
+                        Miễn phí Canva Pro cho&nbsp;
+                        <a href="" class="">giáo dục </a>
+                        &nbsp;và&nbsp;
+                        <a href="" class="">các tổ chức phi lợi nhuận.</a>
+                    </span>
+                    <ul class="conten__body-icon-list">
+                        <li class="conten__body-icon-item"><img src="https://static.canva.com/web/images/f6f70aacaee7fe46159da69b0f0ddfe6.png" alt="Intel" class="dBec-g"></li>
+                        <li class="conten__body-icon-item"><img src="https://static.canva.com/web/images/54bfd0f79706de4b3bae74cf7a168204.png" alt="PayPal" class="dBec-g"></li>
+                        <li class="conten__body-icon-item"><img src="https://static.canva.com/web/images/b875c9819a6b2e654747f437199feb0f.png" alt="UC Davis" class="dBec-g"></li>
+                        <li class="conten__body-icon-item"><img src="https://static.canva.com/web/images/7fdd93504544c2a5b6cb8230384f7a25.png" alt="Baxter" class="dBec-g"></li>
+                        <li class="conten__body-icon-item"><img src="https://static.canva.com/web/images/7fdd93504544c2a5b6cb8230384f7a25.png" alt="Baxter" class="dBec-g"></li>
+                        <li class="conten__body-icon-item"><img src="https://static.canva.com/web/images/e641124f6dcfd7c7bfafb05bb000905d.png" alt="Danone" class="dBec-g"></li>
+                    </ul>
+                </div>
+            </div>
+        <!-- footer -->
+            <footer class="footer">
+                <div class="footer__list-big">
+                    <ul class="footer__list-small">
+                        <li class="footer__list-small-item-big">Duyệt</li>
+                        <li><a href="" class="footer__list-small-item-small" >Logo</a></li>
+                        <li><a href="" class="footer__list-small-item-small" >Porter</a></li>
+                        <li><a href="" class="footer__list-small-item-small" >Card visit</a></li>
+                        <li><a href="" class="footer__list-small-item-small" >Flyer</a></li>
+                        <li><a href="" class="footer__list-small-item-small" >Hồ sơ xin việc</a></li>
+                        <li><a href="" class="footer__list-small-item-small" >Infographic</a></li>                    
+                    </ul>
+                    <ul class="footer__list-small">
+                        <li class="footer__list-small-item-big">Tính năng</li>
+                        <li><a href="" class="footer__list-small-item-small" >Loại thiết kế</a></li>
+                        <li><a href="" class="footer__list-small-item-small" >Biểu đồ</a></li>
+                        <li><a href="" class="footer__list-small-item-small" >Chỉnh sửa ảnh</a></li>
+                        <li><a href="" class="footer__list-small-item-small" >In</a></li>                
+                    </ul>
+                    <ul class="footer__list-small">
+                        <li class="footer__list-small-item-big">Tài nguyên</li>
+                        <li><a href="" class="footer__list-small-item-small" >Trình biên tập ảnh</a></li>
+                        <li><a href="" class="footer__list-small-item-small" >Hỗ trợ</a></li>                 
+                    </ul>
+                    <ul class="footer__list-small">
+                        <li class="footer__list-small-item-big">Sản phẩm</li>
+                        <li><a href="" class="footer__list-small-item-small" >Tải ứng dụng</a></li>
+                        <li><a href="" class="footer__list-small-item-small" >Pro</a></li>
+                        <li><a href="" class="footer__list-small-item-small" >Giáo dục</a></li>
+                        <li><a href="" class="footer__list-small-item-small" >Giá</a></li>                 
+                    </ul>
+                    <ul class="footer__list-small">
+                        <li class="footer__list-small-item-big">Công ty</li>
+                        <li><a href="" class="footer__list-small-item-small" >Giới thiệu</a></li>
+                        <li><a href="" class="footer__list-small-item-small" >Điều khoản và quyền riêng tư</a></li>                 </ul>
+                </div>
+                <div class="footer__end">
+                    <button class="footer__end-lag">
+                        <i class="footer__end-lag-icon1"><span aria-hidden="true" class="NA_Img dkWypw"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M3.8 14.25h3.81a21.9 21.9 0 0 1 0-4.5h-3.8a8.5 8.5 0 0 0 0 4.5zm.57 1.5c1 2.04 2.8 3.61 4.98 4.33-.68-1.1-1.2-2.6-1.52-4.33H4.37zm15.83-1.5a8.5 8.5 0 0 0 0-4.5h-3.81a21.9 21.9 0 0 1 0 4.5h3.8zm-.57 1.5h-3.46a12.78 12.78 0 0 1-1.52 4.33 8.53 8.53 0 0 0 4.98-4.33zm-10.5-1.5h5.74a20.12 20.12 0 0 0 0-4.5H9.13a20.12 20.12 0 0 0 0 4.5zm.23 1.5c.56 2.84 1.69 4.75 2.64 4.75.95 0 2.08-1.9 2.64-4.75H9.36zm-4.99-7.5h3.46c.31-1.74.84-3.24 1.52-4.33a8.53 8.53 0 0 0-4.98 4.33zm15.26 0a8.53 8.53 0 0 0-4.98-4.33c.68 1.1 1.2 2.6 1.52 4.33h3.46zm1.64 0h.04v.1a10 10 0 1 1-.04-.1zm-11.91 0h5.28C14.08 5.41 12.95 3.5 12 3.5c-.95 0-2.08 1.9-2.64 4.75z"></path></svg></span></i>
+                        Tiếng Việt(Việt Nam)
+                        <i class="footer__end-lag-icon2"><span aria-hidden="true" class="uRWxVA dkWypw"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="currentColor" d="M11.71 6.47l-3.53 3.54c-.1.1-.26.1-.36 0L4.3 6.47a.75.75 0 1 0-1.06 1.06l3.53 3.54c.69.68 1.8.68 2.48 0l3.53-3.54a.75.75 0 0 0-1.06-1.06z"></path></svg></span></i>
+                    </button>
+                    <div class="footer__end-text">
+                        <div class="footer__end-text1">
+                            <a href="">Điều khoản</a>
+                            &nbspvà&nbsp
+                            <a href="">Quyền riêng tư&nbsp</a>
+                        </div>
+                        <div class="footer__end-text2">
+                            &nbsp© 2021 Bảo lưu mọi quyền, Canva®
+                        </div>
+                        
+                    </div>
+                    <div class="footer__end-icon-list">
+                        <a href="" class="footer__end-icon-list-item-icon1"><span aria-hidden="true" class="NA_Img dkWypw hMrffw"><svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M21.5 12.058c0-5.28-4.253-9.558-9.5-9.558s-9.5 4.279-9.5 9.558c0 4.771 3.473 8.725 8.016 9.442v-6.68H8.104v-2.762h2.412V9.952c0-2.395 1.417-3.718 3.588-3.718 1.04 0 2.126.186 2.126.186v2.352h-1.198c-1.18 0-1.548.738-1.548 1.494v1.792h2.635l-.421 2.763h-2.214V21.5c4.543-.717 8.016-4.67 8.016-9.442z" fill="currentColor"></path></svg></span></a>
+                        <a href="" class="footer__end-icon-list-item-icon2"><span aria-hidden="true" class="NA_Img dkWypw uQYiYg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M19.74 6.69a4.26 4.26 0 0 0 1.7-2.38c-.75.5-1.58.85-2.46 1.05A3.73 3.73 0 0 0 16.13 4c-2.15 0-3.89 1.92-3.89 4.3 0 .33.04.66.1.97a10.75 10.75 0 0 1-8.02-4.48 4.61 4.61 0 0 0 1.2 5.73 3.6 3.6 0 0 1-1.76-.54v.05c0 2.08 1.34 3.82 3.12 4.21a3.56 3.56 0 0 1-1.75.07 3.97 3.97 0 0 0 3.63 2.98A7.36 7.36 0 0 1 3 19.07 10.29 10.29 0 0 0 8.97 21c7.16 0 11.07-6.54 11.07-12.21l-.01-.56a8.4 8.4 0 0 0 1.94-2.22c-.7.34-1.45.57-2.23.68z"></path></svg></span></a>
+                        <a href="" class="footer__end-icon-list-item-icon3"><span aria-hidden="true" class="NA_Img dkWypw"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><linearGradient id="_1646198408__a" y1="100%"><stop offset="0%" stop-color="#ffd520"></stop><stop offset="49%" stop-color="#f50000"></stop><stop offset="100%" stop-color="#b900b4"></stop></linearGradient><path fill="url(#_1646198408__a)" d="M12 3c-2.44 0-2.75.01-3.71.05-.96.05-1.61.2-2.19.42a4.4 4.4 0 0 0-1.59 1.04c-.5.5-.8 1-1.04 1.6a6.6 6.6 0 0 0-.42 2.18C3.01 9.25 3 9.56 3 12s.01 2.75.05 3.71c.05.96.2 1.61.42 2.19.23.59.54 1.09 1.04 1.59s1 .8 1.6 1.04a6.6 6.6 0 0 0 2.18.42c.96.04 1.27.05 3.71.05s2.75-.01 3.71-.05c.96-.05 1.61-.2 2.19-.42a4.4 4.4 0 0 0 1.59-1.04c.5-.5.8-1 1.04-1.6a6.6 6.6 0 0 0 .42-2.18c.04-.96.05-1.27.05-3.71s-.01-2.75-.05-3.71a6.62 6.62 0 0 0-.42-2.19 4.4 4.4 0 0 0-1.04-1.59c-.5-.5-1-.8-1.6-1.04a6.6 6.6 0 0 0-2.18-.42C14.75 3.01 14.44 3 12 3zm0 1.62c2.4 0 2.69.01 3.64.05.87.04 1.35.2 1.67.31.42.17.72.36 1.03.68.32.31.51.61.68 1.03.12.32.27.8.3 1.67.05.95.06 1.24.06 3.64 0 2.4-.01 2.69-.06 3.64-.04.87-.19 1.35-.31 1.67-.17.42-.36.72-.68 1.03-.31.32-.62.51-1.03.68-.32.12-.8.27-1.68.3-.95.05-1.24.06-3.64.06-2.41 0-2.7-.01-3.65-.06a5.12 5.12 0 0 1-1.67-.31 2.8 2.8 0 0 1-1.04-.68 2.75 2.75 0 0 1-.67-1.03c-.13-.32-.27-.8-.32-1.68-.03-.94-.04-1.24-.04-3.63 0-2.4 0-2.7.04-3.65.05-.87.2-1.36.32-1.67.15-.43.36-.72.67-1.04a2.67 2.67 0 0 1 1.04-.67c.31-.13.78-.27 1.66-.32.96-.03 1.24-.04 3.65-.04l.03.02zm0 2.76a4.62 4.62 0 1 0 0 9.24 4.62 4.62 0 0 0 0-9.24zM12 15a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm5.88-7.8a1.08 1.08 0 1 1-2.16 0 1.08 1.08 0 0 1 2.16 0z"></path></svg></span></a>
+                        <a href="" class="footer__end-icon-list-item-icon4"><span aria-hidden="true" class="NA_Img dkWypw _6X8ASw"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.64 19.31c-.1-.79-.17-2 .03-2.87l1.17-4.97s-.3-.6-.3-1.48c0-1.4.8-2.43 1.81-2.43.86 0 1.27.64 1.27 1.4 0 .87-.55 2.15-.83 3.34-.24 1 .5 1.8 1.48 1.8 1.78 0 3.14-1.87 3.14-4.58 0-2.39-1.72-4.06-4.17-4.06a4.33 4.33 0 0 0-4.52 4.34c0 .86.33 1.78.75 2.28a.3.3 0 0 1 .07.29l-.28 1.13c-.05.18-.15.22-.34.13-1.25-.58-2.03-2.4-2.03-3.87 0-3.15 2.3-6.05 6.61-6.05 3.47 0 6.16 2.47 6.16 5.77 0 3.45-2.17 6.22-5.18 6.22-1.02 0-1.97-.52-2.3-1.15l-.62 2.38c-.22.87-.83 1.96-1.24 2.62A10 10 0 1 0 12 2"></path></svg></span></a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        
+        <div class="modal-1 js-modal-1">
+            <div class="modal__form-login">
+                <div class="modal__form-login-conten">
+                    <div class="modal__header">
+                        Đăng nhập vào tài khoản
+                    </div>
+    
+                    <ul class="modal__list">
+                        <li><a href="" class="modal__item">
+                            <i class="fab fa-google modal__icon"></i>
+                            <div class="modal__item-text">
+                                Đăng nhập bằng Google
+                            </div>
+                            
+                        </a></li>
+                        <li><a href="" class="modal__item">
+                            <i class="fab fa-facebook modal__icon" style="color: #3b5998;"></i>
+                            <div class="modal__item-text">
+                                Đăng nhập bằng Facebook
+                            </div>
+                        </a></li>
+                        <li><a href="" class="modal__item">
+                            <i class="fab fa-apple modal__icon" style="color: #515154;"></i>
+                            <div class="modal__item-text">
+                                Đăng nhập bằng Apple
+                            </div>
+                        </a></li>
+                    </ul>   
+                    <div class="modal-or">
+                        <div class="modal__line"></div>
+                        <div class="modal-or__text">Hoặc</div>
+                        <div class="modal__line"></div>
+                    </div>
+                    <div class="modal__infor">
+                        <div class="modal__infor-text">
+                            Email/Di động
+                            <input type="email" class="modal-input" placeholder="Email hoặc số điện thoại di động">
+                        </div>
+    
+                        <div class="modal__infor-text">
+                            Mật khẩu
+                            <input type="password" class="modal-input" placeholder="*************" style="outline: none;">
+                        </div>
+                    </div>
+
+                    <button class="modal__btn">Đăng nhập</button>
+
+                    <div class="modal__end">
+                        <a href="" class="modal__end-text">Quên mật khẩu?</a>
+                        <div class="modal__end-text">Bạn sử dụng Canva lần đầu? Hãy 
+                            <a href="" class="modal__end-register">Đăng ký</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <img src="./assets/img/modal.webp" class="modal__img-link"alt="" >
+            </div>
+            <div class="modal__close js-modal-close-1">
+                <div class="modal__close-icon"><span class="TcNIhA"><span aria-hidden="true" class="uRWxVA dkWypw"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.818 4.05a.75.75 0 0 0-1.06 1.06l3.181 3.183-3.182 3.182a.75.75 0 1 0 1.061 1.06L8 9.355l3.182 3.182a.75.75 0 1 0 1.06-1.061L9.062 8.293l3.182-3.182a.75.75 0 0 0-1.061-1.06L8 7.231 4.818 4.05z" fill="currentColor"></path></svg></span></span></div>
+            </div>
+        </div>
+        <div class="modal-2 js-modal-2">
+            <div class="modal__form-login">
+                <div class="modal__form-login-conten">
+                    <div class="modal__header">
+                        Bắt đầu với Canva
+                    </div>
+                    <div class="modal__header-conten">
+                        Tạo tài khoản miễn phí. Canva luôn được yêu thích bởi cả người mới bắt đầu lẫn chuyên gia, làm việc theo nhóm cũng như cá nhân.
+                    </div>
+                    <ul class="modal__list">
+                        <li><a href="" class="modal__item">
+                            <i class="fab fa-google modal__icon"></i>
+                            <div class="modal__item-text">
+                                Đăng ký bằng Google
+                            </div>
+                            
+                        </a></li>
+                        <li><a href="" class="modal__item">
+                            <i class="fab fa-facebook modal__icon" style="color: #3b5998;"></i>
+                            <div class="modal__item-text">
+                                Đăng ký bằng Facebook
+                            </div>
+                        </a></li>
+                        <li><a href="" class="modal__item">
+                            <i class="fab fa-apple modal__icon" style="color: #515154;"></i>
+                            <div class="modal__item-text">
+                                Đăng ký bằng Apple
+                            </div>
+                        </a></li>
+                    </ul>   
+                    
+
+                    <button href="https://accounts.google.com/AccountChooser/signinchooser?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=AccountChooser" class="modal__btn">Đăng ký bằng email</button>
+
+                    <div class="modal__end">
+                        <div class="modal__end-text">Bạn sử dụng Canva lần đầu? Hãy 
+                            <a href="" class="modal__end-register">Đăng nhập</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <img src="./assets/img/modal.webp" class="modal__img-link"alt="" >
+            </div>
+            <div class="modal__close js-modal-close-2">
+                <div class="modal__close-icon"><span class="TcNIhA"><span aria-hidden="true" class="uRWxVA dkWypw"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.818 4.05a.75.75 0 0 0-1.06 1.06l3.181 3.183-3.182 3.182a.75.75 0 1 0 1.061 1.06L8 9.355l3.182 3.182a.75.75 0 1 0 1.06-1.061L9.062 8.293l3.182-3.182a.75.75 0 0 0-1.061-1.06L8 7.231 4.818 4.05z" fill="currentColor"></path></svg></span></span></div>
+            </div>
+        <!-- </div>
+        <div class="modal-bars">
+            <ul class="modal-bars__list">
+
+            </ul>
+        </div> -->
+    </div>
+
+
+    <script>
+        // showLogin
+        const logIn = document.querySelector('.js-header-login')
+        const modal1 = document.querySelector('.js-modal-1')
+        const modalClose1=document.querySelector('.js-modal-close-1')
+        const modalClose2=document.querySelector('.js-modal-close-2')
+
+        function showModal1(){
+
+            modal1.classList.add('open')
+        }
+        logIn.addEventListener('click',showModal1)
+        // showRegister
+        const register = document.querySelector('.js-header-register')
+        const modal2 = document.querySelector('.js-modal-2')
+        function showModal2(){
+
+            modal2.classList.add('open')
+        }
+
+        // go bo close
+        function hideModal1(){
+            modal1.classList.remove('open')
+        }
+        
+        function hideModal2(){
+            modal2.classList.remove('open')
+        }
+        // Khi người dùng nhấp vào bất kỳ đâu bên ngoài phương thức, hãy đóng nó
+        window.onclick = function(event1) {
+            if (event1.target == modal1 || event.target == modal2) {
+                modal1.classList.remove('open')
+                
+                modal2.classList.remove('open')
+            }
+        }
+        register.addEventListener('click',showModal2)
+        
+        modalClose1.addEventListener('click',hideModal1)
+        
+        modalClose2.addEventListener('click',hideModal2)
+        
+
+    </script>
+</body>
+</html>
